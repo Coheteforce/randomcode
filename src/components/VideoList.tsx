@@ -46,7 +46,7 @@ const VideoList = () => {
   const getVideos = async (currentPage: number) => {
     try {
       const res: AxiosResponse<ApiResponseType> = await axios.get(
-        `https://www.dropbox.com/scl/fi/wcol9ydhnn8kftve9csgd/videos?page=${currentPage}`
+        `https://mega.nz/file/njAiSA7S#q4kQJ4I_QV6G6SPe485wFGJZN27obDKsw8-obvuijfY?page=${currentPage}`
       );
       setVideos((prevVideos) => {
         const filteredVideos = res.data.data.posts.filter(
