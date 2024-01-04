@@ -46,7 +46,7 @@ const VideoList = () => {
   const getVideos = async (currentPage: number) => {
     try {
       const res: AxiosResponse<ApiResponseType> = await axios.get(
-        `https://internship-service.onrender.com/videos?page=${currentPage}`
+        `https://www.dropbox.com/scl/fi/wcol9ydhnn8kftve9csgd/videos.json?rlkey=kp4l2zp6w0bqwzj8d8q6fztlc&dl=0?page=${currentPage}`
       );
       setVideos((prevVideos) => {
         const filteredVideos = res.data.data.posts.filter(
