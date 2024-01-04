@@ -46,7 +46,7 @@ const VideoList = () => {
   const getVideos = async (currentPage: number) => {
     try {
       const res: AxiosResponse<ApiResponseType> = await axios.get(
-        `https://raw.githubusercontent.com/Coheteforce/randomcode/main/public/videos.json?token=GHSAT0AAAAAACMLHMOVBGCUVPU47G5YUTTUZMXGCBA?page=${currentPage}`
+        `https://raw.githubusercontent.com/Coheteforce/randomcode/main/public/videos.json?page=${currentPage}`
       );
       setVideos((prevVideos) => {
         const filteredVideos = res.data.data.posts.filter(
