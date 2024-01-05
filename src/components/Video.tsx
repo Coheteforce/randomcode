@@ -3,6 +3,8 @@ import { styled } from "styled-components";
 import { VideoType } from "../../types/Video";
 import { RiShareForwardFill } from "react-icons/ri";
 import { FaThumbsDown, FaThumbsUp } from "react-icons/fa";
+import { FcConferenceCall } from "react-icons/fc";
+
 import { MdInsertComment } from "react-icons/md";
 import {
   IoMdPause,
@@ -296,7 +298,7 @@ const Video = ({
               aria-label="I like this"
               className={`like-button ${liked ? "liked" : ""}`}
             >
-              <FaThumbsUp />
+              <FcConferenceCall />
             </button>
             <span>
               {video.reaction.count > 0
