@@ -309,7 +309,7 @@ const Video = ({
           <div className="dislike">
             <button
               title="I dislike this"
-              onClick={handleDislike}
+              onClick={handleLike}
               aria-label="I dislike this"
               className={`dislike-button ${disliked ? "disliked" : ""}`}
             >
