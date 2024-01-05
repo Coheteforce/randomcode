@@ -285,7 +285,7 @@ const Video = ({
           <div className="creator-details">
             <img src={video.creator.pic} alt={video.creator.name} />
             <p>{video.creator.name}</p>
-            <button>Subscribe</button>
+            <button>Randomente</button>
           </div>
           <p>{video.submission.title}</p>
           <p>{video.submission.description}</p>
